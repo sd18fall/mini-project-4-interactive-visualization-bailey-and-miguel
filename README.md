@@ -7,7 +7,4 @@ Miguel: Understand the use of classes and how they interact with one another in 
 Bailey: Learn to manipulate classes better and use libraries effectively. 
 Sonic Pi, python library for Sonic Pi, pygames, Mingus
 We would like to know what classes we will be using, what sound file type and other libraries needed and start the implementation of key shapes (rectangles of a few sizes and colors).
-Going down a rabbit hole/in a impossible direction and wasting time. Not knowing what the syntax is and endless debugging
-
-
-
+Going down a rabbit hole/in a impossible direction and wasting time is one of our biggest risks moving forward with the project
