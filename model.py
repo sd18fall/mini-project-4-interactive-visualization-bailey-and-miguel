@@ -46,6 +46,5 @@ class PianoModel(object):
             output_lines.append(str(key))
         return "\n".join(output_lines)
 
-    def update(self, num):
-        keyx=self.key[num]
-        #PyGameWindowView.draw((255, 0, 255), keyx)
+def update(num):
+    PyGameWindowView.draw(255, 0, 255, num)

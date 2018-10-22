@@ -13,8 +13,9 @@ and modular code.
 import time
 import pygame
 from model import PianoModel
-import model
+from model import update as UPDATE
 from view import PyGameWindowView
+import view
 from controller import PyGameKeyboardController
 
 
@@ -37,8 +38,7 @@ def start_game(size):
             if event.type == pygame.locals.QUIT:
                 running = False
             controller.handle_event(event)
-        model.update(0)
-        view.draw()
+        view.draw(255,0,0)
         time.sleep(.001)
 
     pygame.quit()
