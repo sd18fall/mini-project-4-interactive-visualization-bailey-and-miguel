@@ -25,7 +25,7 @@ class PyGameWindowView(object):
                                              key.y,
                                              key.width,
                                              key.height))
-            else: 
+            else:
                 pygame.draw.rect(self.screen,
                              pygame.Color(255, 255, 255),
                              pygame.Rect(key.x,

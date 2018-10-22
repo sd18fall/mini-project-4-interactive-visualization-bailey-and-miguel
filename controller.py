@@ -13,7 +13,7 @@ class PyGameMouseController(object):
     def handle_event(self,event):
         """ Handle the mouse event so the paddle tracks the mouse position """
         if event.type == pygame.locals.MOUSEMOTION:
-            self.model.paddle.x = event.pos[0] - self.model.paddle.width/2.0
+            self.model.key = event.pos[0] - self.model
 
 class PyGameKeyboardController(object):
     """ Handles keyboard input for brick breaker """
@@ -22,11 +22,12 @@ class PyGameKeyboardController(object):
 
     def handle_event(self,event):
         """ Left and right presses modify the x velocity of the paddle """
-        
+
         if event.type != pygame.locals.KEYDOWN:
             return
-        
-        if event.key == pygame.K_a:
+
+        if event.key == pygame.K_a.KEYDOWN:
+            model.key.name[0] = color(255,255,0)
+
             model.update(0)
             time.sleep(.1)
-            

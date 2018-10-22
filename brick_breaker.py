@@ -10,7 +10,6 @@ and modular code.
 
 @author: SoftDesProfs
 """
-
 import time
 import pygame
 from model import PianoModel
@@ -26,9 +25,9 @@ def start_game(size):
     pygame.init()
 
     model1 = PianoModel(size)
-    
+
     print(model1)
-    
+
     view = PyGameWindowView(model1, size)
     controller = PyGameKeyboardController(model1)
 
@@ -47,4 +46,3 @@ def start_game(size):
 if __name__ == '__main__':
     size = (375, 120)
     start_game(size)
-    
