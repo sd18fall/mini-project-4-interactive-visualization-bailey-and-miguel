@@ -10,9 +10,11 @@ How to Use The Piano:
 
 3. Download all files in the directory
 
-4. Run the piano.py file (WHILE the Sonic Pi app is open)
+4. ReDo the path in Blues_solo.py, using the path on your computer wherever Bass_D2.wav is located. 
 
-5. Once the Piano pops up press keys on your keyboard (a through m) and sounds will play and the keys will light up
+5. Run the piano.py file (WHILE the Sonic Pi app is open)
+
+6. Once the Piano pops up press keys on your keyboard (a through m) and sounds will play and the keys will light up
 
 
 
