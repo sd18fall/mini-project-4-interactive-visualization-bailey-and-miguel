@@ -1,9 +1,9 @@
 """
-BrickBreaker model code
+piano model code
 """
 from view import *
 class Key(object):
-    """ Encodes the state of a brick in the game """
+    """ Encodes the state of a key in the game """
     def __init__(self,height,width,x,y,name,color=(255,255,255)):
         self.height = height
         self.width = width
@@ -19,7 +19,7 @@ class Key(object):
                                                           self.y, self.name)
 keys = []
 class PianoModel(object):
-    """ Encodes a model of the game state """
+    """ Encodes a model of the piano state """
     def __init__(self, size):
         global keys
         self.width = size[0]

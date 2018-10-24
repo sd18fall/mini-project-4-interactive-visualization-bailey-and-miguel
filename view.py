@@ -1,5 +1,5 @@
 """
-BrickBreaker view code
+Piano view code
 """
 
 import pygame
@@ -9,16 +9,13 @@ class PyGameWindowView(object):
     """ A view of piano rendered in a Pygame window """
     def __init__(self, model, size):
         """ Initialize the view with a reference to the model and the
-            specified game screen dimensions (represented as a tuple
+            specified piano screen dimensions (represented as a tuple
             containing the width and height """
         self.model = model
         
 
     def draw(colora=255, colorb=255, colorc=255, num=None):
-        """ Draw the current game state to the screen """
-        
-        
-        #self.screen.fill(pygame.Color(255,0,0))
+        """ Draw the current piano state to the screen """
         
         if num is None:
             for key in model.keys:
@@ -39,12 +36,7 @@ class PyGameWindowView(object):
                                                  key.width,
                                                  key.height))
                     pygame.display.update()
+                
                 else:
-                    #pygame.draw.rect(self.screen,
-                                # pygame.Color(255, 255, 255),
-                                 #pygame.Rect(key.x,
-                                            # key.y,
-                                             #key.width,
-                                             #key.height))
-
+                    
                     pygame.display.update()

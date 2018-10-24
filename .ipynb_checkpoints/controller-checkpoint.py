@@ -1,5 +1,5 @@
 """
-BrickBreaker controller code
+Piano controller code
 """
 import time
 import pygame.locals
@@ -9,25 +9,14 @@ import view
 import model
 import blues_solo
 
-#class PyGameMouseController(object):
-    #""" A controller that uses the mouse to move the paddle """
-    #def __init__(self,model):
-        #self.model = model
-
-   # def handle_event(self,event):
-    #    """ Handle the mouse event so the paddle tracks the mouse position """
-     #   if event.type == pygame.locals.MOUSEMOTION:
-      #      self.model.key = event.pos[0] - self.model
-
 class PyGameKeyboardController(object):
-    """ Handles keyboard input for brick breaker """
+    """ Handles keyboard input for piano """
     def __init__(self,model):
         self.model = model
 
     def handle_event(self,event):
         
         if event.type != pygame.locals.KEYDOWN:
-            #view.PyGameWindowView.draw(255,255,255)
             return
 
         if event.type == pygame.KEYDOWN:

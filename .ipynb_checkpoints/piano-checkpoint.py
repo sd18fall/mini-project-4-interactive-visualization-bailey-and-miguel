@@ -1,14 +1,6 @@
 # -*- coding: utf-8 -*-
-"""
-This is a worked example of applying the Model-View-Controller (MVC)
-design pattern to the creation of a simple arcade game (in this case
-Brick Breaker).
-
-We will create our game in stages so that you can see the process by
-which the MVC pattern can be utilized to create clean, extensible,
-and modular code.
-
-@author: SoftDesProfs
+"""This is a piano app that uses the a to l keys and z to m keys to play notes. 
+@authors: bwolfe1, miguelii44
 """
 import time
 import pygame
@@ -21,7 +13,7 @@ from controller import PyGameKeyboardController
 
 def start_game(size):
     """
-    Given screen 'size' as (x,y) tuple, start BrickBreaker game
+    Given screen 'size' as (x,y) tuple, start piano model
     """
     pygame.init()
 
