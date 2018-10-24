@@ -4,9 +4,9 @@ Miguel Castillo II
 
 How to Use The Piano:
 
-1. Install sonic pi on WINDOWS
+1. Install sonic pi on WINDOWS using a download from the sonic pi website
 
-2. Install py game, and the sonic pi to python module on WINDOWS
+2. Install py game (pip install Pygame), and the sonic pi to python module (pip install python-sonic) on WINDOWS
 
 3. Download all files in the directory
 
