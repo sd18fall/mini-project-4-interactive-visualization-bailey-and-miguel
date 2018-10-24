@@ -31,14 +31,15 @@ def start_game(size):
 
     view = PyGameWindowView(model1, size)
     controller = PyGameKeyboardController(model1)
-
+    
     running = True
+    
     while running:
         for event in pygame.event.get():
             if event.type == pygame.locals.QUIT:
                 running = False
             controller.handle_event(event)
-        view.draw()
+        PyGameWindowView.draw()
         time.sleep(.001)
 
     pygame.quit()
