@@ -10,7 +10,9 @@ How to Use The Piano:
 
 3. Download all files in the directory
 
-4. Run the brick_breaker.py file
+4. Run the piano.py file (WHILE the Sonic Pi app is open)
+
+5. Once the Piano pops up press keys on your keyboard (a through m) and sounds will play and the keys will light up
 
 
 

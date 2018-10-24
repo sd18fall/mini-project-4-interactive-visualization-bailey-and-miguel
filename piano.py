@@ -19,8 +19,6 @@ def start_game(size):
 
     model1 = PianoModel(size)
 
-    print(model1)
-
     view = PyGameWindowView(model1, size)
     controller = PyGameKeyboardController(model1)
     
