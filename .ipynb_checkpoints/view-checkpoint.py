@@ -14,35 +14,36 @@ class PyGameWindowView(object):
         self.model = model
         self.screen = pygame.display.set_mode(size)
 
-    def draw(self, colora, colorb, colorc, num=None):
+    def draw(self, colora=255, colorb=255, colorc=255, num=None):
         """ Draw the current game state to the screen """
         self.screen.fill(pygame.Color(255,0,0))
 
-        for key in model.keys:
-            if num is None:
+        
+        if num is None:
+            for key in model.keys:
                 pygame.draw.rect(self.screen,
                              pygame.Color(255, 255, 255),
                              pygame.Rect(key.x,
                                          key.y,
                                          key.width,
                                          key.height))
-                pygame.display.update()
+            pygame.display.update()
+        else:
+            for key in model.keys:
+                if key==model.keys[num]:
+                    pygame.draw.rect(self.screen,
+                                     pygame.Color(colora, colorb, colorc),
+                                     pygame.Rect(key.x,
+                                                 key.y,
+                                                 key.width,
+                                                 key.height))
+                    pygame.display.update()
+                else:
+                    #pygame.draw.rect(self.screen,
+                                # pygame.Color(255, 255, 255),
+                                 #pygame.Rect(key.x,
+                                            # key.y,
+                                             #key.width,
+                                             #key.height))
 
-            elif key==model.keys[num]:
-                pygame.draw.rect(self.screen,
-                                 pygame.Color(colora, colorb, colorc),
-                                 pygame.Rect(key.x,
-                                             key.y,
-                                             key.width,
-                                             key.height))
-                pygame.display.update()
-
-            else:
-                #pygame.draw.rect(self.screen,
-                            # pygame.Color(255, 255, 255),
-                             #pygame.Rect(key.x,
-                                        # key.y,
-                                         #key.width,
-                                         #key.height))
-                                    
                     pygame.display.update()

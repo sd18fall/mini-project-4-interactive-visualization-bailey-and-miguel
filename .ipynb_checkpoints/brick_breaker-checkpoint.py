@@ -38,7 +38,7 @@ def start_game(size):
             if event.type == pygame.locals.QUIT:
                 running = False
             controller.handle_event(event)
-        view.draw(255,0,0)
+        view.draw()
         time.sleep(.001)
 
     pygame.quit()
